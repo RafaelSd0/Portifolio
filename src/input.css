@@ -1,0 +1,211 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* geral */
+@layer utilities {
+    .custom-hover {
+      @apply hover:shadow-lg hover:shadow-green-500/90 hover:border-green-500/90 hover:border-b ease-out duration-300;
+    }
+  }
+  
+p{
+    @apply  xl:text-xl md:text-lg text-base outfit;
+}
+
+h2{
+    @apply xl:text-4xl md:text-3xl text-2xl md:pl-0 sm:pl-5 pl-5 ;
+}
+
+section{
+    @apply pt-16 pb-16 sm:px-5 md:px-20 lg:px-36 ;
+}
+
+h2{
+    @apply source-code-pro2;
+}
+h3{
+    @apply source-code-pro3;
+}
+
+p,h1,h2,h3{
+    @apply dark:text-white;
+}
+
+/* fonts */
+
+.source-code-pro {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.source-code-pro2 {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.source-code-pro3 {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: light;
+}
+
+.outfit {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* li do heading pc e tablet*/
+
+#Nevegação li{
+    @apply custom-hover hidden xl:block rounded-md;
+}
+
+/* img rosto */
+.desketop-img{
+    @apply hidden;
+}
+@media (min-width: 1280px){
+    .desketop-img{
+        @apply block;
+    }
+}
+@media (min-width: 1280px){
+    .mobile-img{
+        @apply hidden;
+    }
+}
+
+/* links mobile */
+.links-mobile{
+    @apply border border-black w-52 h-10 flex items-center pl-3 dark:border-slate-900;
+}
+@media (min-width: 1280px){
+    .links-mobile {
+        @apply border-none  block;
+        height: 62px;
+        width: 62px;
+    }
+    .links-mobile p{
+        @apply xl:hidden;
+    }
+}
+
+/* Section projetos*/
+
+.Projeto{
+    @apply bg-stone-100 rounded-xl text-center space-y-5 hover:bg-slate-200 custom-hover dark:bg-slate-900 dark:hover:bg-slate-800;
+    height: 350px;
+    width: 250px;
+}
+
+@media (min-width: 1280px){
+    .Projeto{
+        height: 400px;
+        width: 320px;
+    }
+}
+
+.Projeto h3{
+    @apply xl:text-3xl md:text-2xl text-xl ;
+}
+
+/* Serviços */
+.Servico{
+    @apply bg-stone-100 rounded-xl text-center space-y-5 hover:bg-slate-200 custom-hover dark:bg-slate-900 dark:hover:bg-slate-800;
+    height: 120px;
+    width: 180px;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+
+@media (min-width: 768px) {
+    .Servico{
+        padding-left: 7px;
+        padding-right: 7px;
+        height: 150px;
+        width: 250px;
+    }
+}
+
+@media (min-width: 1280px){
+    .Servico{
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 150px;
+        width: 320px;
+    }
+}
+
+.Servico h3{
+    @apply xl:text-3xl md:text-2xl text-xl ;
+}
+/* Habilidades */
+
+.habilidades li{
+    @apply flex items-center flex-col  ;
+    height: 100px;
+    width: 100px;
+}
+
+/* Contato*/
+.contato li a{
+    @apply flex items-center flex-col  aumentar ;
+}
+.contato li #Curriculo{
+    @apply flex items-center flex-col aumentar ;
+}
+
+/* animação de aumentar de tamanho  */
+
+.aumentar {
+    transition: transform 300ms linear;
+}
+
+.aumentar:hover {
+    transform: scale(1.3);
+}
+
+
+/* animação digitando */
+@media (min-width: 1280px){
+    .message{
+        width: 520px;
+        animation: digitando 2s steps(12), blink .3s infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid;
+    
+    
+    }
+}
+
+@media (min-width: 1280px){
+    .message2{
+        width: 500px;
+        animation: digitando 3s steps(25), blink .3s infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid;
+    }
+}
+
+
+@keyframes digitando{
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blink{
+    30%{
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
