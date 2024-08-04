@@ -10,7 +10,7 @@
   }
   
 p{
-    @apply  xl:text-xl md:text-lg text-base outfit;
+    @apply  xl:text-xl md:text-lg sm:text-base text-sm outfit;
 }
 
 h2{
