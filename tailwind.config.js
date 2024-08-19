@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
-  darkMode:'media',
+  darkMode: 'media',
   theme: {
     extend: {
       keyframes: {
@@ -9,11 +9,17 @@ module.exports = {
           '0%': { opacity: 0 },
           '100%': { opacity: 1 },
         },
+        loopScroll: { 
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
       },
       animation: {
-        fadeIn: 'fadeIn 3s forwards', // Aqui, "forwards" faz com que a animação mantenha o estado final
+        fadeIn: 'fadeIn 3s forwards', 
+        loopScroll: 'loopScroll 50s linear infinite', 
       },
     },
   },
   plugins: [],
-}
+};
+

@@ -7,25 +7,22 @@
     .custom-hover {
       @apply hover:shadow-lg hover:shadow-green-500/90 hover:border-green-500/90 hover:border-b ease-out duration-300;
     }
-  }
+}
   
 p{
     @apply  xl:text-xl md:text-lg sm:text-base text-sm outfit;
 }
 
 h2{
-    @apply xl:text-4xl md:text-3xl text-2xl md:pl-0 sm:pl-5 pl-5 ;
+    @apply xl:text-4xl md:text-3xl text-2xl md:pl-0 sm:pl-5 pl-5  source-code-pro2;
+}
+
+h3{
+    @apply source-code-pro3;
 }
 
 section{
     @apply pt-16 pb-16 sm:px-5 md:px-20 lg:px-36 ;
-}
-
-h2{
-    @apply source-code-pro2;
-}
-h3{
-    @apply source-code-pro3;
 }
 
 p,h1,h2,h3{
@@ -96,57 +93,8 @@ p,h1,h2,h3{
     }
 }
 
-/* Section projetos*/
+/* section sobre*/
 
-.Projeto{
-    @apply bg-stone-100 rounded-xl text-center space-y-5 hover:bg-slate-200 custom-hover dark:bg-slate-900 dark:hover:bg-slate-800;
-    height: 350px;
-    width: 250px;
-}
-
-@media (min-width: 1280px){
-    .Projeto{
-        height: 400px;
-        width: 320px;
-    }
-}
-
-.Projeto h3{
-    @apply xl:text-3xl md:text-2xl text-xl ;
-}
-
-/* Serviços */
-.Servico{
-    @apply bg-stone-100 rounded-xl text-center space-y-5 hover:bg-slate-200 custom-hover dark:bg-slate-900 dark:hover:bg-slate-800;
-    height: 120px;
-    width: 180px;
-    padding-left: 5px;
-    padding-right: 5px;
-    
-}
-
-@media (min-width: 768px) {
-    .Servico{
-        padding-left: 7px;
-        padding-right: 7px;
-        height: 150px;
-        width: 250px;
-    }
-}
-
-@media (min-width: 1280px){
-    .Servico{
-        padding-left: 10px;
-        padding-right: 10px;
-        height: 150px;
-        width: 320px;
-    }
-}
-
-.Servico h3{
-    @apply xl:text-3xl md:text-2xl text-xl ;
-}
-/* Habilidades */
 
 .habilidades li{
     @apply flex items-center flex-col  ;
