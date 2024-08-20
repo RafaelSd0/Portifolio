@@ -78,36 +78,25 @@ p,h1,h2,h3{
     }
 }
 
-/* links mobile */
-.links-mobile{
-    @apply border border-black w-52 h-10 flex items-center pl-3 dark:border-slate-900;
-}
-@media (min-width: 1280px){
-    .links-mobile {
-        @apply border-none  block;
-        height: 62px;
-        width: 62px;
-    }
-    .links-mobile p{
-        @apply xl:hidden;
-    }
+
+
+/* section habilidades*/
+
+
+.habilidade{
+    @apply text-center py-1 px-2 rounded-lg ; 
 }
 
-/* section sobre*/
-
-
-.habilidades li{
-    @apply flex items-center flex-col  ;
-    height: 100px;
-    width: 100px;
+.habilidade h3{
+    @apply xl:text-2xl md:text-xl text-lg  ;
 }
 
+.habilidade img{
+    @apply mx-auto;
+}
 /* Contato*/
-.contato li a{
-    @apply flex items-center flex-col  aumentar ;
-}
-.contato li #Curriculo{
-    @apply flex items-center flex-col aumentar ;
+.contato li a img{
+    @apply mx-auto  aumentar ;
 }
 
 /* animação de aumentar de tamanho  */
