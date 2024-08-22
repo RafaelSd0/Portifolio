@@ -611,6 +611,10 @@ video {
   height: 2rem;
 }
 
+.h-\[360px\] {
+  height: 360px;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -621,6 +625,10 @@ video {
 
 .w-3\/5 {
   width: 60%;
+}
+
+.w-\[400px\] {
+  width: 400px;
 }
 
 .w-full {
@@ -717,6 +725,14 @@ video {
   gap: 1.25rem;
 }
 
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
 .space-x-16 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(4rem * var(--tw-space-x-reverse));
@@ -759,6 +775,11 @@ video {
   border-width: 1px;
 }
 
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
 .bg-gray-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
@@ -790,6 +811,11 @@ video {
   padding: 1.25rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -810,6 +836,10 @@ video {
   padding-bottom: 2rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .pl-0 {
   padding-left: 0px;
 }
@@ -826,12 +856,21 @@ video {
   padding-top: 1.25rem;
 }
 
+.pr-2 {
+  padding-right: 0.5rem;
+}
+
 .text-left {
   text-align: left;
 }
 
 .text-center {
   text-align: center;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl {
@@ -1071,6 +1110,12 @@ section {
 
 /* section habilidades*/
 
+.habilidade > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
 .habilidade {
   border-radius: 0.5rem;
   padding-top: 0.25rem;
@@ -1175,6 +1220,11 @@ section {
     padding-right: 0px;
   }
 
+  .sm\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1187,6 +1237,10 @@ section {
 }
 
 @media (min-width: 768px) {
+  .md\:h-10 {
+    height: 2.5rem;
+  }
+
   .md\:h-12 {
     height: 3rem;
   }
@@ -1197,6 +1251,11 @@ section {
 
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .md\:text-6xl {
@@ -1210,6 +1269,13 @@ section {
   }
 }
 
+@media (min-width: 1024px) {
+  .lg\:px-36 {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+}
+
 @media (min-width: 1280px) {
   .xl\:block {
     display: block;
@@ -1217,6 +1283,10 @@ section {
 
   .xl\:h-10 {
     height: 2.5rem;
+  }
+
+  .xl\:h-12 {
+    height: 3rem;
   }
 
   .xl\:h-16 {
@@ -1271,9 +1341,23 @@ section {
 }
 
 @media (prefers-color-scheme: dark) {
+  .dark\:border-none {
+    border-style: none;
+  }
+
+  .dark\:border-slate-700 {
+    --tw-border-opacity: 1;
+    border-color: rgb(51 65 85 / var(--tw-border-opacity));
+  }
+
   .dark\:bg-black {
     --tw-bg-opacity: 1;
     background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  }
+
+  .dark\:bg-slate-700 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(51 65 85 / var(--tw-bg-opacity));
   }
 
   .dark\:bg-slate-800 {
