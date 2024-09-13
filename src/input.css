@@ -84,7 +84,7 @@ p,h1,h2,h3{
 
 
 .habilidade{
-    @apply text-center py-1 px-2 rounded-lg space-y-2 ; 
+    @apply text-center py-1 px-2 rounded-lg space-y-2 h-14 w-32 m-3 ; 
 }
 
 .habilidade h3{
